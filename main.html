@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Shop</title>
+</head>
+<body>
+    <div class="registration">
+        <div class="container">
+            <form action="">
+                <h2>Данные о вас</h2>
+                <div class="registration__line">
+                    <label >Ваше имя: </label>
+                    <input id="user_name" type="text" name="name">
+                </div>
+                <div class="registration__line">
+                    <label>Ваша фамилия: </label>
+                    <input id="last_name" type="text" name="lastname">
+                </div>
+                <div class="registration__line">
+                    <label>Ваш email: </label>
+                    <input type="email" name="lastname">
+                </div>
+                <button type="submit" class="btn next">Далее</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+        let tg = window.Telegram.WebApp;
+        tg.expand();
+        document.addEventListener('DOMContentLoaded', ()=>{
+            document.getElementById('user_name').value = tg.initDataUnsafe.user.first_name;
+            document.getElementById('last_name').value = tg.initDataUnsafe.user.last_name;
+        });
+    </script>
+</body>
+</html>
