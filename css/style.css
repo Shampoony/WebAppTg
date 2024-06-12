@@ -33,6 +33,10 @@ button {
     background-color: var(--tg-theme-button-color);
     color: var(--tg-theme-button-text-color);
     font-family: 'Montserrat', sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header__container {
@@ -59,7 +63,7 @@ button {
     height: 400px;
 
     padding: 20px 0;
-    background-color: var(--tg-theme-accent-text-color);
+    background-color: transparent;
 }
 
 .registration__line {
