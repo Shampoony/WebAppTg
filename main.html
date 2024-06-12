@@ -10,18 +10,18 @@
     <div class="registration">
         <div class="container">
             <form action="">
-                <h2>Данные о вас</h2>
+                <h1>Регистрация</h1>
                 <div class="registration__line">
-                    <label >Ваше имя: </label>
+                    <label >Ваше имя пользователя: </label>
                     <input id="user_name" type="text" name="name">
                 </div>
                 <div class="registration__line">
-                    <label>Ваша фамилия: </label>
-                    <input id="last_name" type="text" name="lastname">
-                </div>
-                <div class="registration__line">
                     <label>Ваш email: </label>
-                    <input type="email" name="lastname">
+                    <input id="email" type="email" name="email">
+                </div>
+                <div class="registration__line checkbox-line">
+                    <input class="custom-checkbox" id="email" type="checkbox" name="email">
+                    <label>Я соглашаюсь на обработку персональных данных: </label>
                 </div>
                 <button type="submit" class="btn next">Далее</button>
             </form>
